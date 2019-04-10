@@ -6,6 +6,7 @@ ifeq ($(TARGET), riscv)
 
   #CXXFLAGS += -march=gap8
   #CXXFLAGS += -DTFLITE_MCU
+  CXXFLAGS += -DTFLITE_PROFILING_ENABLED
 	LIBS += -ldl
 	BUILD_TYPE := micro
 endif

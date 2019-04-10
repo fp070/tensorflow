@@ -254,7 +254,7 @@ benchmark_lib: $(BENCHMARK_LIB)
 
 $(BENCHMARK_BINARY) : $(BENCHMARK_LIB)
 	@mkdir -p $(dir $@)
-	$(CXX) $(CXXFLAGS) $(INCLUDES) \
+	$(CXX) --static $(CXXFLAGS) $(INCLUDES) \
 	-o $(BENCHMARK_BINARY) \
 	$(LIBFLAGS) $(BENCHMARK_LIB) $(LDFLAGS) $(LIBS)
 
