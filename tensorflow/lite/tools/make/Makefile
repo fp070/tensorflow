@@ -57,8 +57,8 @@ LIBS := \
 # There are no rules for compiling objects for the host system (since we don't
 # generate things like the protobuf compiler that require that), so all of
 # these settings are for the target compiler.
-#CXXFLAGS := -O3 -DNDEBUG -fPIC
-CXXFLAGS := -O0 -g -fPIC
+CXXFLAGS := -O3 -DNDEBUG -fPIC
+#CXXFLAGS := -O0 -g -fPIC
 CXXFLAGS += $(EXTRA_CXXFLAGS)
 CCFLAGS := ${CXXFLAGS}
 CXXFLAGS += --std=c++11
